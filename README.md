@@ -2,13 +2,13 @@
 
 This project studies the time-frequency concentration of Fourier and wavelet transforms for Gaussian pulses and linear chirps.
 
-The goal is to compare how each method localizes signal energy in time and frequency and to analyze how that concentration changes depending on the signal.
+The goal is to compare how each method localizes signal energy in time and frequency and to analyze how that concentration changes depending on the signal, with probability density functions used to measure this concentration.
 
 ## Repository Contents
 
-- `developing_figures.py` — generates the main figures comparing Fourier and wavelet representations.
-- `variance_calculations.py` — computes the numerical uncertainty and concentration metrics.
-- `main.pdf` — paper/report associated with the project.
+- `developing_figures.py` — generates the main figures comparing Fourier and wavelet representations
+- `variance_calculations.py` — computes the numerical uncertainty and concentration metrics for Gaussian pulses and linear chips
+- `main.pdf` — research paper
 
 ## Running the Code
 
@@ -26,7 +26,7 @@ pip install numpy scipy matplotlib PyWavelets
 python developing_figures.py
 ```
 
-This script produces the time-frequency visualizations for the Gaussian pulse and chirp examples.
+This script produces the time-frequency visualizations for the Gaussian pulse and linear chirp examples.
 
 ### Compute metrics
 
@@ -34,4 +34,4 @@ This script produces the time-frequency visualizations for the Gaussian pulse an
 python variance_calculations.py
 ```
 
-This script calculates the quantitative concentration/uncertainty results used in the analysis.
+This script calculates the uncertainty results used in the analysis.
